@@ -4,6 +4,10 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
   end
 
+  def find_products(id)
+    @products = Product.find(id)
+  end
+
   def create
     charge = perform_stripe_charge
     order  = create_order(charge)
