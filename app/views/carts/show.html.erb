@@ -4,6 +4,17 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if enhanced_cart.length == 0 %>
+
+  <div class="alert alert-primary" role="alert">
+    Cart is currently empty.
+  </div>
+  <button type="button" class="btn btn-primary">
+    <a href="<%= root_path %>" style="color:inherit">Back to shop</a>
+  </button>
+
+  <% else %>
+
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +59,7 @@
       <% end %>
     </div>
   </div>
+
+  <% end %>
 
 </section>
