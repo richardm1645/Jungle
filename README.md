@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Ruby on Rails 6.1. Features a category of plants and shrubs to purchase, shopping cart with payment testing, and end-to-end testing via Cypress.
 
 ## Setup
 
@@ -12,6 +12,17 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
+
+## Screenshots and description
+
+Homepage of all products
+!["Products"](app/assets/images/Products.png)
+
+The title, description, and cost of a specific product
+!["Product Details"](app/assets/images/Details.png)
+
+Adds items to shopping cart, uses Stripe for payment testing
+!["Product Details"](app/assets/images/Payment.png)
 
 ## Database
 
